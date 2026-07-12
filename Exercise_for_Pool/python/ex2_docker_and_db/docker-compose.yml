@@ -1,0 +1,31 @@
+services:
+  app:
+    build: .
+    container_name: ex2_app
+    depends_on:
+      - mysql
+    environment:
+      DB_HOST: mysql
+      DB_PORT: "3306"
+      DB_USER: ex2_user
+      DB_PASSWORD: ex2_password
+      DB_NAME: ex2
+    volumes:
+      - .:/app
+
+  mysql:
+    image: mysql:8.0
+    container_name: ex2_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: ex2
+      MYSQL_USER: ex2_user
+      MYSQL_PASSWORD: ex2_password
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_0900_ai_ci
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:

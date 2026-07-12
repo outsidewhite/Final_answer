@@ -1,0 +1,6 @@
+pandas>=2.0,<2.1
+requests>=2.32,<2.33
+beautifulsoup4>=4.12,<4.13
+sqlalchemy>=2.0,<2.1
+PyMySQL>=1.1,<1.2
+cryptography>=42,<43
