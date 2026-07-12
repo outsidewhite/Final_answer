@@ -12,9 +12,9 @@ docker compose up -d --build
 
 ```powershell
 docker compose exec app bash
-cat /etc/os-release
-python3.8 --version
-mysql --default-character-set=utf8mb4 -hmysql -uex2_user -pex2_password -e "select version();"
+cat /etc/issue
+python3 --version
+mysql --version
 ```
 
 上記の出力が映るようにスクリーンショットを撮り、`ex2-1.png` として提出します。
