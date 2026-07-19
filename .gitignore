@@ -3,4 +3,30 @@ Exercise_for_Pool/python/ex1_explanation.csv
 Exercise_for_Pool/python/ex1_explanation.md
 Exercise_for_Pool/python/ex2_explanation.md
 Exercise_for_Pool/python/ex2_sample.png
-Exercise_for_Pool/.vscode/settings.json
+
+# ローカルのエディタ設定
+.vscode/
+Exercise_for_Pool/.vscode/
+
+# Python が生成するキャッシュ
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ローカル環境・依存パッケージ
+.venv/
+venv/
+env/
+ENV/
+site-packages/
+
+# ブラウザドライバ本体・展開パッケージ
+chromedriver.exe
+driver-package/
+*.crdownload
+
+# 実行時に生成される一時データ
+Exercise_for_Pool/python/ex2_docker_and_db/test.csv
